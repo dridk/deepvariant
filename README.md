@@ -64,7 +64,7 @@ We recommend using our Docker solution. The command will look like this:
 BIN_VERSION="1.1.0"
 docker run \
   -v "YOUR_INPUT_DIR":"/input" \
-  -v "YOUR_OUTPUT_DIR:/output" \
+  -v "YOUR_OUTPUT_DIR":"/output" \
   google/deepvariant:"${BIN_VERSION}" \
   /opt/deepvariant/bin/run_deepvariant \
   --model_type=WGS \ **Replace this string with exactly one of the following [WGS,WES,PACBIO,HYBRID_PACBIO_ILLUMINA]**
